@@ -1,0 +1,15 @@
+@import "../settings.css";
+
+body::-webkit-scrollbar {
+    width: 0.35rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--light_black);
+}
+
+body::-webkit-scrollbar-thumb {
+    scrollbar-width: 4rem;
+
+    background: var(--dark_black);
+}
