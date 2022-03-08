@@ -59,7 +59,7 @@ body {
 }
 
 .plans {
-  margin-top: 130px;
+  margin-top: 250px;
 
   display: flex;
 
@@ -68,7 +68,7 @@ body {
 }
 
 .plans .plans-content {
-  width: 70%;
+  width: 60%;
 
   display: flex;
   flex-direction: column;
@@ -84,11 +84,13 @@ body {
   font-size: 3rem;
   font-weight: 900;
 
+  text-align: center;
+
   color: var(--dark_black);
 }
 
 .plans .plans-content .plans-list {
-  width: 100%;
+  width: 60%;
 
   display: flex;
   flex-direction: row;
@@ -97,12 +99,16 @@ body {
   justify-content: space-evenly;
   align-items: center;
 
-  padding: 50px 35px;
+  padding: 0 100px 35px 100px;
 }
 
 .plans .plans-content .plans-list .plan {
+  position: relative;
+
   width: 250px;
-  height: 450px;
+  min-height: 320px;
+
+  margin: 15px 10px 15px 10px;
 
   display: flex;
   flex-direction: column;
@@ -119,13 +125,13 @@ body {
 }
 
 .plans .plans-content .plans-list .plan img {
-  width: 150px;
+  width: 125px;
 
   margin-bottom: 30px;
 }
 
 .plans .plans-content .plans-list .plan h1 {
-  margin:  0 0 10px 0 ;
+  margin: 0 0 10px 0;
 
   font-size: 1.8rem;
   font-weight: 650;
@@ -137,6 +143,80 @@ body {
   display: flex;
   flex-direction: column;
 
+  justify-content: start;
+  align-items: center;
+}
+
+.plans .plans-content .plans-list .plan .plan-includes .system {
+  width: 100%;
+
+  cursor: help;
+
+  position: relative;
+  display: flex;
+
   justify-content: center;
   align-items: center;
+
+  font-size: 1rem;
+  font-weight: 450;
+
+  color: var(--light_black);
+}
+
+.plans .plans-content .plans-list .plan .plan-includes .system .system-tooltip {
+  display: none;
+  visibility: hidden;
+
+  width: 250px;
+
+  position: absolute;
+  top: auto;
+  bottom: auto;
+
+  left: 110%;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: var(--light_black);
+}
+.plans .plans-content .plans-list .plan .plan-includes .system .system-tooltip .tooltip-arrow {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+
+  left: -3%;
+  z-index: 1;
+
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-right: 10px solid var(--light_black);
+}
+
+.plans .plans-content .plans-list .plan .plan-includes .system .system-tooltip span {
+  font-size: 0.7rem;
+  font-weight: 450;
+
+  margin: 4px 3px;
+  padding: 2px 3px;
+
+  border-radius: 5px;
+  color: var(--dark_black);
+  background: var(--dark_white);
+}
+
+.plans .plans-content .plans-list .plan .plan-includes .system:hover .system-tooltip {
+  display: flex;
+  visibility: visible;
 }
