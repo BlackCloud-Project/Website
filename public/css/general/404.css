@@ -1,0 +1,67 @@
+@import "/public/css/settings.css";
+
+body {
+  background: var(--light_black);
+}
+
+.error {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.error .error-content {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 20px;
+  border-radius: 10px;
+  background: var(--dark_gray);
+}
+
+.error .error-content h1 {
+  margin: 0;
+
+  font-size: 10rem;
+  font-weight: 900;
+
+  color: var(--light_white);
+}
+
+.error .error-content p {
+  margin: 0;
+
+  font-size: 1.3rem;
+  font-weight: 400;
+
+  color: var(--dark_white);
+}
+
+.error .error-content a {
+  margin-top: 25px;
+
+  font-size: 1.3rem;
+  font-weight: 650;
+
+  text-decoration: none;
+
+  padding: 10px 17px;
+  border-radius: 10px;
+  color: var(--light_black);
+  background: var(--light_gray);
+}
+
+.error .error-content a:hover {
+  transform: scale(1.1);
+  
+  color: var(--light_white);
+}
