@@ -25,30 +25,59 @@
 .footer .footer-content .section {
   display: flex;
   flex-direction: column;
- 
+
   justify-content: flex-start;
   align-items: flex-start;
-
 }
 .footer .footer-content .section h1 {
   font-size: 1.7rem;
   font-weight: 650;
- 
-  padding: 0 0 13px 0 !important;
- 
+
+  margin: 20px 0 10px 0 !important;
+
   color: var(--light_white);
 }
 
 .footer .footer-content .section a {
   font-size: 1rem;
   font-weight: 550;
- 
+
   text-decoration: none;
   padding: 0 0 13px 0 !important;
- 
+
   color: var(--dark_white);
 }
 
 .footer .footer-content .section a:hover {
   color: var(--light_white);
+}
+
+@media screen and (max-width: 1280px) {
+  .footer .footer-content {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .footer .footer-content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .footer .footer-content {
+    width: 100%;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer .footer-content .section {
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -42,6 +42,8 @@ body {
 }
 
 .presentation .presentation-image img {
+  width: 500px;
+
   position: relative;
   animation: imageJump 3s infinite;
 }
@@ -68,7 +70,7 @@ body {
 }
 
 .plans .plans-content {
-  width: 60%;
+  width: 70%;
 
   display: flex;
   flex-direction: column;
@@ -90,7 +92,7 @@ body {
 }
 
 .plans .plans-content .plans-list {
-  width: 60%;
+  width: 80%;
 
   display: flex;
   flex-direction: row;
@@ -177,6 +179,9 @@ body {
   left: 110%;
   z-index: 1;
 
+  overflow: hidden;
+  overflow-wrap: break-word;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -188,6 +193,7 @@ body {
   border-radius: 10px;
   background: var(--light_black);
 }
+
 .plans .plans-content .plans-list .plan .plan-includes .system .system-tooltip .tooltip-arrow {
   position: absolute;
   top: auto;
@@ -219,4 +225,58 @@ body {
 .plans .plans-content .plans-list .plan .plan-includes .system:hover .system-tooltip {
   display: flex;
   visibility: visible;
+}
+
+@media screen and (max-width: 1280px) {
+  .presentation .presentation-image img {
+    width: 450px;
+  }
+
+  .plans .plans-content {
+    width: 100%;
+
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .presentation {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .presentation .presentation-text {
+    width: 50%;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .presentation .presentation-image img {
+    display: none;
+    visibility: hidden;
+  }
+
+  .plans .plans-content .plans-list .plan .plan-includes .system .system-tooltip {
+    display: none;
+  }
+
+  .plans .plans-content .plans-list .plan .plan-includes .system:hover .system-tooltip {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .plans .plans-content .plans-list {
+    padding: 0 0 35px 0;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .presentation .presentation-text {
+    width: 80%;
+  }
 }
